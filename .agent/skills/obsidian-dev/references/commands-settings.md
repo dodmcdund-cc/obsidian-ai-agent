@@ -14,11 +14,10 @@ Applicability: Plugin
 - Persist settings using `this.loadData()` / `this.saveData()`.
 - Use stable command IDs; avoid renaming once released.
 
-## Version Considerations
+## Settings tabs
 
-When using newer API features (e.g., `SettingGroup` since API 1.11.0), consider backward compatibility:
-- **For new plugins**: You can set `minAppVersion: "1.11.0"` in `manifest.json` and use the feature directly
-- **For existing plugins**: Use version checking with `requireApiVersion()` to support both newer and older Obsidian versions
-- See [code-patterns.md](code-patterns.md) for backward compatibility patterns, including a complete example for `SettingGroup`
+These projects target `minAppVersion: "1.11.0"` or later, so `SettingGroup` is always available — use it directly, with no `requireApiVersion()` guards or pre-1.11 fallbacks.
+
+For authoring or migrating a `PluginSettingTab`, use the **`settings` skill**. It is the authoritative reference for the declarative `getSettingDefinitions()` API (Obsidian 1.13+) and the optional `display()` fallback for supporting older app versions. Do not hand-roll settings guidance here.
 
 

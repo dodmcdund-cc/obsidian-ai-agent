@@ -11,13 +11,13 @@ This skill covers the operational aspects of maintaining an Obsidian project, in
 
 To ensure reliable builds, consistent reference materials, and safe release processes while strictly following project policies.
 
-## When to Use
+## Scope
 
-Load this skill when:
-- Running build or lint commands.
-- Syncing reference documentation from external sources.
-- Bumping project versions or preparing releases.
-- Troubleshooting build or environment issues.
+This skill covers:
+- Build and lint workflows
+- Syncing reference documentation from external sources
+- Version management and release preparation
+- Build and environment troubleshooting
 
 ## Core Rules
 
@@ -29,7 +29,10 @@ Load this skill when:
 
 - `references/build-workflow.md`: Standard build and development commands.
 - `references/release-readiness.md`: Checklist for ensuring a project is ready for release.
+- `references/scorecard-compliance.md`: Map of Obsidian community plugin scorecard signals to concrete fixes (vulnerability overrides, attestation workflow, CSS dedup, obsidianmd rules).
+- `references/contributing-template.md`: Portable CONTRIBUTING.md template for the scorecard hygiene check.
+- `references/security-privacy.md`: Developer policies, mandatory disclosures, and dependency vulnerability hygiene via `pnpm.overrides`.
 - `references/sync-procedure.md`: How to pull updates from reference repositories.
-- `references/versioning-releases.md`: Workflow for versioning and GitHub releases.
+- `references/versioning-releases.md`: Workflow for versioning and GitHub releases, including the build-provenance attestation pattern.
 - `references/troubleshooting.md`: Common issues and their resolutions.
 - `references/quick-reference.md`: One-page cheat sheet for common operations.
