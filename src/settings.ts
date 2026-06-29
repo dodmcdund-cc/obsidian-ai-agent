@@ -1,5 +1,5 @@
 import { App, PluginSettingTab, Setting } from "obsidian";
-import MyPlugin from "./main";
+import ObsidianAiAgent from "./main";
 
 export interface Settings {
 	apiKey: string;
@@ -23,9 +23,9 @@ export const DEFAULT_SETTINGS: Settings = {
 };
 
 export class AiAgentSettingTab extends PluginSettingTab {
-	plugin: MyPlugin;
+	plugin: ObsidianAiAgent;
 
-	constructor(app: App, plugin: MyPlugin) {
+	constructor(app: App, plugin: ObsidianAiAgent) {
 		super(app, plugin);
 		this.plugin = plugin;
 	}
